@@ -1,3 +1,9 @@
+/*custom font*/
+@font-face {
+    font-family: 'Mojangles';
+    src: url("E:\project\mojangles\mojangles.ttf");
+}
+
 /* Reset and Basic Styling */
 body {
     font-family: 'Mojangles', sans-serif;
