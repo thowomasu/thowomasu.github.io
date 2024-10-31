@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrogHosting - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>test</p>
+  <header>
+    <div class="logo"><a href="index.html">FrogHosting</a></div>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Start Your Own Game Server with FrogHosting</h1>
+      <p>Choose from 20+ supported games with top-notch hardware!</p>
+      <button onclick="window.location.href='pricing.html'">Rent a Server</button>
+    </section>
+
+    <section class="benefits">
+      <h2>Benefits of Choosing FrogHosting</h2>
+      <ul>
+        <li>High-speed servers</li>
+        <li>24/7 customer support</li>
+        <li>Easy server configuration</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FrogHosting. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
