@@ -1,7 +1,7 @@
 /*custom font*/
 @font-face {
     font-family: 'Mojangles';
-    src: url("E:\project\mojangles\mojangles.ttf")format('ttf');
+    src: url(font/mojangles/mojangles.ttf);
 }
 
 /* Reset and Basic Styling */
