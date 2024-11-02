@@ -1,7 +1,8 @@
 /*custom font*/
 @font-face {
     font-family: 'Mojangles';
-    src: url(font/mojangles/mojangles.ttf);
+    src: url(font/mojangles/mojangles.ttf) format('truetype');
+    font-weight: normal;
 }
 
 /* Reset and Basic Styling */
@@ -60,4 +61,82 @@ body {
     0% { box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5); }
     100% { box-shadow: none; }
   }
-  
+  .pricing-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #DF9248;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.game-selection, .plan-info {
+    margin: 10px 0;
+}
+
+.billing-options {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.billing-option {
+    padding: 10px 20px;
+    background-color: #784D25;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.billing-option.active {
+    background-color: #784D25;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.plan-card {
+    border: 1px solid #784D25;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: calc(25% - 20px);
+    background-color: #784D25;
+    color: #fff
+}
+
+.plan-card.popular {
+    background-color: #784D25;
+    color: #fff;
+}
+
+.plan-card .price {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.order-btn {
+    background-color: #D39469;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.show-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #784D25;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
