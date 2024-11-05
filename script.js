@@ -1,7 +1,7 @@
 function toggleMenu() {
-    const navMenu = document.getElementById("nav-menu");
-    navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
-  }
+  var menuList = document.getElementById("menuList");
+  menuList.classList.toggle("active");
+}
 
   document.querySelectorAll('button').forEach(button => {
     button.addEventListener('mouseenter', () => {

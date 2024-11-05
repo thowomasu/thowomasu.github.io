@@ -23,12 +23,45 @@ body {
     color: white;
     text-decoration: none;
   }
-  
-  nav a {
-    color: #D39469;
-    text-decoration: none;
-    margin: 0 10px;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+  
+  .nav-menu {
+    display: flex;
+    gap: 20px; /* Adds space between the links */
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .menu-button {
+    display: none; /* Hide by default, show on smaller screens */
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block; /* Show the button on small screens */
+    }
+  
+    .nav-menu {
+      display: none; /* Hide the menu initially */
+      flex-direction: column;
+      background-color: #fff; /* Example background for visibility */
+      position: absolute;
+      top: 60px; /* Adjust based on your header height */
+      right: 0;
+      width: 200px; /* Set a width */
+    }
+  
+    .nav-menu.active {
+      display: flex; /* Show the menu when active */
+    }
+  }  
   
   /* Main Sections */
   .hero {
