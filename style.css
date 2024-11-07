@@ -30,11 +30,14 @@ body {
   }
   
   .nav-menu {
+    color: #FFDFC1;
+    text-decoration: none;
     display: flex;
     gap: 20px; /* Adds space between the links */
   }
   
   .nav-menu a {
+    color: #FFDFC1;
     text-decoration: none;
     padding: 10px;
   }
@@ -51,9 +54,9 @@ body {
     .nav-menu {
       display: none; /* Hide the menu initially */
       flex-direction: column;
-      background-color: #fff; /* Example background for visibility */
+      background-color: #AB7642; /* Background for visibility */
       position: absolute;
-      top: 60px; /* Adjust based on your header height */
+      top: 60px; /* Adjust based on header height */
       right: 0;
       width: 200px; /* Set a width */
     }
@@ -102,8 +105,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+ h3{
+  text-align: center;
+}
 
 .game-selection, .plan-info {
+    text-align: center;
     margin: 10px 0;
 }
 
@@ -165,7 +172,7 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #784D25;
-    color: #fff;
+    color: #FFDFC1;
     border: none;
     cursor: pointer;
     display: block;
