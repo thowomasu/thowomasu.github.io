@@ -110,13 +110,26 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
- h3{
-  text-align: center;
+
+h3 {
+    text-align: center;
 }
 
 .game-selection, .plan-info {
     text-align: center;
     margin: 10px 0;
+}
+
+/* Currency Selector */
+.currency-selector {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.currency-selector span {
+    cursor: pointer;
 }
 
 .billing-options {
@@ -145,6 +158,9 @@ body {
 }
 
 .plan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid #784D25;
     padding: 20px;
     border-radius: 8px;
@@ -152,12 +168,32 @@ body {
     width: 200px;
     background-color: #784D25;
     color: #fff;
-    position:relative;
+    position: relative;
+    height: 300px; 
 }
 
 .plan-card.popular {
-    background-color: #784D25;
+    background-color: #FFDFC1;
     color: #fff;
+    border: #FFDFC1;
+    -webkit-text-fill-color: #784D25;
+}
+
+.plan-card.popular .order-btn {
+    background-color: #DF9248;
+}
+
+/* Popular tag */
+.tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #DF9248;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: large;
 }
 
 .plan-card .price {
@@ -166,13 +202,16 @@ body {
 }
 
 .order-btn {
-    background-color: #D39469;
-    color: #fff;
-    border-radius: 5px;
-      padding: 10px 15px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #D39469;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: auto; 
+  margin: 0 auto; 
 }
+
 
 .show-more {
     margin-top: 20px;
