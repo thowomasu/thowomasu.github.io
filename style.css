@@ -77,43 +77,36 @@ body {
     font-weight: bolder;
     background-image: image();
   }
-  .benefits{
-    text-align: left;
-  }
-  .benefits-grid {
-    background-color: #FFDFC1;
-    padding: 20px;
-    border-radius: 8px;
-    font-family: 'Mojangles', sans-serif;
-    color: #784D25;
-  }
-  
-  .benefits-grid h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: 'Mojangles', sans-serif; /* Customize as needed */
-    color: #784D25;
-  }
-  
   .benefits-grid ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(4, 1fr); /* Maximum 4 columns */
     gap: 20px; /* Spacing between grid items */
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto; /* Centers the grid container horizontally */
+    max-width: 1200px; /* Optional: limits the maximum width */
+    justify-items: center; /* Centers grid items horizontally */
+    align-items: center; /* Centers grid items vertically */
   }
   
-  .benefits-grid li {
-    background-color: #FFDFC1;
-    padding: 15px;
-    border-radius: 8px;
+  @media (max-width: 1024px) {
+    .benefits-grid ul {
+      grid-template-columns: repeat(3, 1fr); /* Reduce to 3 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefits-grid ul {
+      grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefits-grid ul {
+      grid-template-columns: repeat(1, 1fr); /* Single column on extra small screens */
+    }
+  }
 
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  
   /* Pricing Table */
   .pricing-table table {
     width: 100%;
