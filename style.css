@@ -85,13 +85,6 @@ body {
   }
   
   /* Footer */
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Footer Styles */
 footer {
     background-color: #AB7642;
     padding: 1rem;
