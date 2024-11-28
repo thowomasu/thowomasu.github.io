@@ -211,7 +211,7 @@ h3 {
 }
 
 .plan-card {
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid #784D25;
