@@ -6,12 +6,20 @@
 }
 
 /* Reset and Basic Styling */
-body {
-    font-family: 'Mojangles', sans-serif;
-    background-color: #FFDFC1;
-    color: #784D25;
-  }
-  
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mojangles', sans-serif;
+  background-color: #FFDFC1;
+  color: #784D25;
+  overflow-x: hidden;
+}
+
   /* Header */
   header {
     background-color: #784D25;
@@ -20,9 +28,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     z-index: 999;
-  }
+    height: 100px;
+}
   
   .logo a {
     color: white;
@@ -131,6 +140,7 @@ footer {
     width: 100%;
     box-sizing: border-box; 
     z-index: 999;
+    height: 80px;
 }
   
   /* Button effects */
@@ -271,24 +281,23 @@ h3 {
 
 /* Side Navigation */
 .side-nav {
-  position: fixed; 
-  top: 108.5px; 
-  left: 0; 
-  width: flex; 
-  height: calc(100vh - 80px - 148.8px); 
-  background-color: #DF9248; 
-  padding: 20px; 
-  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); 
-  z-index: 1000; 
-  overflow-y: auto; 
+  position: fixed;
+  top: 100px; /* Start from the top of the viewport */
+  bottom: 80px; /* Extend to the bottom of the viewport */
+  left: 0;
+  width: 200px; /* Set a fixed width */
+  background-color: #DF9248;
+  padding: 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow-y: auto;
 }
 
-/* Content Area */
+/* Adjust the Content Area */
 .content {
-  display: block;
-  margin-left: 190px; 
-  padding: 80px 20px 20px 20px; 
-  margin-bottom: 50px; 
+  margin-left: 220px; /* Adjust based on the width of the side-nav */
+  padding: 80px 20px 20px 20px;
+  margin-bottom: 50px;
   margin-top: 100px;
 }
 
