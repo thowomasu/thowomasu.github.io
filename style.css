@@ -134,7 +134,7 @@ body, html {
   
   /* Footer */
 footer {
-    background-color: #AB7642;
+    background-color: #784D25;
     padding: 1rem;
     color: white;
     text-align: center;
@@ -169,6 +169,10 @@ footer {
 
 h3 {
     text-align: center;
+}
+
+h1 {
+  text-align: center;
 }
 
 .game-selection, .plan-info {
@@ -342,3 +346,4 @@ h3 {
 .content-section.active {
   display: block; 
 }
+
