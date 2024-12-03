@@ -203,81 +203,87 @@ h3 {
 }
 
 .plans {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-self: center;
 }
 
 .plan-card {
-    display: grid;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid #784D25;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 200px;
-    background-color: #784D25;
-    color: #fff;
-    position:relative;
-    height: 300px; 
-    align-self: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #784D25;
+  padding: 15px; /* Reduced padding */
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  background-color: #784D25;
+  color: #fff;
+  position: relative; 
+  align-self: center; 
+  height: 350px;
+}
+
+.plan-card .content { /* Add a container for the content */
+  flex-grow: 1; /* Allow this to grow and push the button down */
+} 
+
+.plan-card .price {
+  font-size: 16px; /* Slightly reduced font size */
+  margin: 5px 0;   /* Reduced margin */
 }
 
 .plan-card.popular {
-    background-color: #FFDFC1;
-    color: #fff;
-    border: #FFDFC1;
-    -webkit-text-fill-color: #784D25;
+  background-color: #FFDFC1;
+  color: #fff;
+  border: #FFDFC1;
+  -webkit-text-fill-color: #784D25;
 }
 
 .plan-card.popular .order-btn {
-    background-color: #DF9248;
+  background-color: #DF9248;
 }
 
 /* Popular tag */
 .tag {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #DF9248;
-    color: #fff;
-    font-size: 12px;
-    padding: 2px 8px;
-    border-radius: 3px;
-    font-size: large;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #DF9248;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: large;
 }
 
-.plan-card .price {
-    font-size: 18px;
-    margin: 10px 0;
-}
+
 
 .order-btn {
   background-color: #D39469;
   color: #fff;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 8px 12px; /* Slightly reduced padding */
   cursor: pointer;
-  font-size: 16px;
-  margin-top: auto; 
+  font-size: 14px;  /* Slightly reduced font size */
   margin: 0 auto; 
+  display: block;
 }
 
 
 .show-more {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #784D25;
-    color: #FFDFC1;
-    border: none;
-    cursor: pointer;
-    display: block;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #784D25;
+  color: #FFDFC1;
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Side Navigation */
