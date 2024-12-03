@@ -24,31 +24,39 @@
   <main>
     <nav class="side-nav">
       <ul>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#terms">Terms of Service</a></li>
-        <li><a href="#privacy">Privacy Policy</a></li>
-        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#contact" onclick="showContent('contact')">Contact</a></li>
+        <li><a href="#terms" onclick="showContent('terms')">Terms of Service</a></li>
+        <li><a href="#privacy" onclick="showContent('privacy')">Privacy Policy</a></li>
+        <li><a href="#faqs" onclick="showContent('faqs')">FAQs</a></li>
       </ul>
     </nav>
     
     <div class="content">
-      <h1 id="contact">Contact Us</h1>
-      <p>Email: <a href="mailto:support@froghosting.com">support@froghosting.com</a></p>
-      <p>Phone: (123) 456-7890</p>
-      <p>Address: 123 Game Server Lane, Hosting City, TX</p>
-  
-      <h2 id="terms">Terms of Service</h2>
-      <p>By using FrogHosting, you agree to our terms and conditions...</p>
-  
-      <h2 id="privacy">Privacy Policy</h2>
-      <p>Your privacy is important to us. We ensure that your data is protected...</p>
-  
-      <h2 id="faqs">Frequently Asked Questions</h2>
-      <p><strong>Q: Can I upgrade my plan later?</strong></p>
-      <p>A: Yes, you can easily upgrade your plan at any time from your account dashboard.</p>
-  
-      <p><strong>Q: Do you offer a free trial?</strong></p>
-      <p>A: Currently, we do not offer a free trial, but we have a 7-day money-back guarantee.</p>
+      <div id="contact" class="content-section active"> 
+        <h1>Contact Us</h1>
+        <p>Email: <a href="mailto:support@froghosting.com">support@froghosting.com</a></p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Game Server Lane, Hosting City, TX</p>
+      </div>
+
+      <div id="terms" class="content-section">
+        <h2>Terms of Service</h2>
+        <p>By using FrogHosting, you agree to our terms and conditions...</p>
+      </div>
+
+      <div id="privacy" class="content-section">
+        <h2>Privacy Policy</h2>
+        <p>Your privacy is important to us. We ensure that your data is protected...</p>
+      </div>
+
+      <div id="faqs" class="content-section">
+        <h2>Frequently Asked Questions</h2>
+        <p><strong>Q: Can I upgrade my plan later?</strong></p>
+        <p>A: Yes, you can easily upgrade your plan at any time from your account dashboard.</p>
+
+        <p><strong>Q: Do you offer a free trial?</strong></p>
+        <p>A: Currently, we do not offer a free trial, but we have a 7-day money-back guarantee.</p>
+      </div>
     </div>
   </main>
   

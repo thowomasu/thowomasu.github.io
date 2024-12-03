@@ -63,6 +63,10 @@ body, html {
   @media (max-width: 768px) {
     .menu-button {
       display: block; /* Show the button on small screens */
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: #FFDFC1;
     }
   
     .nav-menu {
@@ -313,8 +317,11 @@ h3 {
   padding: 0;
 }
 
-.side-nav li {
-  margin: 15px 0;
+.side-nav li { 
+  border: 1px solid #784D25; 
+  margin: 5px 0; 
+  padding: 8px; 
+  border-radius: 5px; 
 }
 
 .side-nav a {
@@ -325,4 +332,13 @@ h3 {
 
 .side-nav a:hover {
   text-decoration: underline; /* Adds underline on hover */
+}
+
+.content-section { 
+  display: none; 
+  margin-top: 20px;
+}
+
+.content-section.active {
+  display: block; 
 }

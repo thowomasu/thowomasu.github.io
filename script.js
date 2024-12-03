@@ -23,3 +23,13 @@ const exchangeRates = {
 function euroConvert () {
   alert("havent developed yet cuz the coder is sleep deprived")
 }
+
+function showContent(sectionId) {
+  const contentSections = document.querySelectorAll('.content-section');
+  contentSections.forEach(section => section.classList.remove('active'));  
+
+
+  const selectedSection = document.getElementById(sectionId);
+  selectedSection.classList.add('active');  
+
+}
