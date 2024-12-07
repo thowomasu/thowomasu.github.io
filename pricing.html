@@ -30,53 +30,92 @@
         </div>
     
         <h3>Select Plan</h3>
-        <div class="currency-selector">
-          <span>$</span>
-          <span><button onclick="euroConvert()">€</button></span>
-          <span>£</span>
-          <span>A$</span>
-          <span>C$</span>
-        </div>
-        <div class="billing-options">
-            <button class="billing-option active">Billed Monthly</button>
-            <button class="billing-option">Billed Quarterly (10% Discount)</button>
-        </div>
-    
-        <div class="plans">
-            <div class="plan-card">
-                <h4>2GB RAM</h4>
-                <p>Basic servers & some modpacks.<br>Minimum for Minecraft: Java Edition</p>
-                <p class="price"><strong>$5.99</strong> first month</p>
-                <p>Recurring Price $7.99<br>Billed Monthly</p>
-                <button class="order-btn">Order Now</button>
-            </div>
-    
-            <div class="plan-card">
-                <h4>4GB RAM</h4>
-                <p>Basic servers & most modpacks.</p>
-                <p class="price"><strong>$11.24</strong> first month</p>
-                <p>Recurring Price $14.99<br>Billed Monthly</p>
-                <button class="order-btn">Order Now</button>
-            </div>
-    
-            <div class="plan-card popular">
-                <h4>6GB RAM</h4>
-                <span class="label">Popular</span>
-                <p>Basic servers & most modpacks.</p>
-                <p class="price"><strong>$16.87</strong> first month</p>
-                <p>Recurring Price $22.49<br>Billed Monthly</p>
-                <button class="order-btn">Order Now</button>
-                <div class="tag">Popular</div>
-            </div>
-    
-            <div class="plan-card">
-                <h4>8GB RAM</h4>
-                <p>Advanced servers & all modpacks.</p>
-                <p class="price"><strong>$20.99</strong> first month</p>
-                <p>Recurring Price $27.99<br>Billed Monthly</p>
-                <button class="order-btn">Order Now</button>
-            </div>
-        </div>
+
+<div class="pricing-table text-center">
+  <div id="plans-table" class="row table" style="margin-bottom: 1.5rem;">
+
+    <div class="pricing-block monthly special sale" data-pid="81" data-memory="2048" data-memory-gb="2" data-ex="0" data-proxy="0" style="display: flex;">
+      <div class="ram-container">
+        <span class="ram">2</span>
+        <span>GB RAM</span>
+      </div>
+
+      <div class="servers-warning">
+        Basic servers & some modpacks. Minimum for Minecraft: Java Edition
+      </div>
+
+      <div class="price-container">
+        <span id="first">$5.99 first month</span>
+        <span id="recurring">Recurring Price $7.99</span>
+      </div>
+
+      <span id="cycle">Billed Monthly</span>
+
+      <button class="cstm-btn">Order Now</button>
+    </div>
+
+    <div class="pricing-block monthly special sale" data-pid="82" data-memory="4096" data-memory-gb="4" data-ex="0" data-proxy="0" style="display: flex;">
+      <div class="ram-container">
+        <span class="ram">4</span>
+        <span>GB RAM</span>
+      </div>
+
+      <div class="servers-warning">
+        Basic servers & most modpacks.
+      </div>
+
+      <div class="price-container">
+        <span id="first">$11.24 first month</span>
+        <span id="recurring">Recurring Price $14.99</span>
+      </div>
+
+      <span id="cycle">Billed Monthly</span>
+
+      <button class="cstm-btn">Order Now</button>
+    </div>
+
+    <div class="pricing-block monthly special sale" data-pid="83" data-memory="6144" data-memory-gb="6" data-ex="0" data-proxy="0" style="display: flex;">
+      <div class="ram-container">
+        <span class="ram">6</span>
+        <span>GB RAM</span>
+      </div>
+
+      <div class="servers-warning">
+        Basic servers & most modpacks.
+      </div>
+
+      <div class="price-container">
+        <span id="first">$16.87 first month</span>
+        <span id="recurring">Recurring Price $22.49</span>
+      </div>
+
+      <span id="cycle">Billed Monthly</span>
+
+      <button class="cstm-btn">Order Now</button>
+    </div>
+
+    <div class="pricing-block monthly special sale" data-pid="84" data-memory="8192" data-memory-gb="8" data-ex="0" data-proxy="0" style="display: flex;">
+      <div class="ram-container">
+        <span class="ram">8</span>
+        <span>GB RAM</span>
+      </div>
+
+      <div class="servers-warning">
+        Advanced servers & all modpacks.
+      </div>
+
+      <div class="price-container">
+        <span id="first">$20.99 first month</span>
+        <span id="recurring">Recurring Price $27.99</span>
+      </div>
+
+      <span id="cycle">Billed Monthly</span>
+
+      <button class="cstm-btn">Order Now</button>
+    </div>
+
+  </div>
+</div>
     
         <button class="show-more">Show More</button>
     </div>
