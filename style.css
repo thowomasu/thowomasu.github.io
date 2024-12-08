@@ -128,30 +128,31 @@ align-items: center;
 }
 
 /* Pricing Table */
-.pricing-table {
-  width: 100%;
-  display: flex;           /* Enable flexbox for the table */
-  flex-wrap: wrap;        /* Allow items to wrap */
-  justify-content: center; /* Center the items horizontally */
-  gap: 20px;              /* Add spacing between items */
-  justify-content: left;
+.pricing-grid { 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust as needed */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px; 
+  justify-items: center;
+  align-items: center;
 }
 
-.pricing-block {
-display: flex;
-flex-direction: column;
-border: 1px solid #784D25;
-padding: 15px;
-border-radius: 8px;
-text-align: center;
-width: 300px; 
-height: fit-content;
-text-align: left;
-background-color: #784D25;
-color: #fff;
-margin-bottom: 20px;
+.pricing-block { 
+  display: flex;
+  flex-direction: column;
+  border: none;      
+  padding: 20px;    
+  border-radius: 8px;
+  text-align: left;
+  background-color: #784D25;
+  color: #fff; 
+  min-height: 277px;
+  max-width: 300px;
+  
 }
-
 .ram-container {
   margin-bottom: 15px;        /* Increased margin */
 }
@@ -173,6 +174,24 @@ margin-bottom: 20px;
 .price-container span {
   display: block;             /* Stack prices vertically */
   font-size: 1.1em;           /* Slightly larger font size */
+}
+
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Order Button */
@@ -200,7 +219,7 @@ background-color: #784D25;
 padding: 1rem;
 color: white;
 text-align: center;
-position: static; 
+position: fixed; 
 bottom: 0;
 left: 0;
 right: 0;
