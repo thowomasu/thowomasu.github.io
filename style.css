@@ -89,11 +89,11 @@ display: none;
 background-color: #DF9248;
 text-align: center;
 padding: 2rem;
--webkit-text-fill-color: #784D25;
-text-shadow: #fff 1px 0 10px;
+-webkit-text-fill-color: #D39469;
+text-shadow: #000 1px 0 10px;
 font-size: larger;
 font-weight: bolder;
-background-image: image();
+background-image: url(ryzen-bg.webp);
 }
 
 h2 {
@@ -110,6 +110,7 @@ margin: 0 auto;
 max-width: 1200px; 
 justify-items: center; 
 align-items: center; 
+left: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -314,8 +315,8 @@ margin-right: auto;
 
 /* Side Navigation */
 .side-nav {
-position: fixed;
-top: 100px; 
+position: relative;
+margin-top: 80px; 
 bottom: 80px; 
 left: 0;
 width: 150px;  /* Reduced width */
@@ -345,10 +346,7 @@ text-decoration: none;
 }
 
 .content {
-margin-left: 170px; 
-padding: 80px 20px 20px 20px;
-margin-bottom: 50px;
-margin-top: 100px;
+margin-left: 170px;
 }
 
 .side-nav a {
@@ -363,7 +361,6 @@ text-decoration: underline;
 
 .content-section {
 display: none;
-margin-top: 20px;
 }
 
 .content-section.active {
