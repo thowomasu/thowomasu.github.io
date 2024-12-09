@@ -21,3 +21,15 @@ function showContent(sectionId) {
   selectedSection.classList.add('active');  
 
 }
+function showMorePlans() {
+  const hiddenPlans = document.querySelectorAll('.hidden-plans');
+  hiddenPlans.forEach(plan => plan.classList.toggle('hidden-plans'));
+
+  // Toggle button text
+  const button = document.querySelector('.show-more');
+  if (button.textContent === "Show More") {
+    button.textContent = "Show Less";
+  } else {
+    button.textContent = "Show More";
+  }
+}
